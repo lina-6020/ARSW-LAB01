@@ -13,6 +13,13 @@ public class CountThreadsMain {
     
     public static void main(String a[]){
         
+    	Thread hilo1 = new Thread(new CountThread(0,99));
+    	Thread hilo2 = new Thread(new CountThread(99,199));
+    	Thread hilo3 = new Thread(new CountThread(200,299));
+    	hilo1.run();
+    	hilo2.run();
+    	hilo3.run();
+    	// .start lanza el hilo ejecutando el metodo run, mientras que el .run ejecuta solo el metodo de la clase.
     }
     
 }
