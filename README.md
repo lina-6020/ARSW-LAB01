@@ -31,14 +31,14 @@ En esta primera parte completamos la clase _CountThread_ para que las mismas def
 	
 	
 	
-* .run() 
+- .run() 
 
 ![image](https://user-images.githubusercontent.com/59893804/105917066-e51b4180-5fff-11eb-8f1d-d07d2ed82dbb.png)
 
 
 
 
-* .start()
+- .start()
 
 ![image](https://user-images.githubusercontent.com/59893804/105917201-09771e00-6000-11eb-9b1b-9f7e21928b7c.png)
 
