@@ -3,6 +3,9 @@
 ### Arquitecturas de Software - ARSW
 ## Ejercicio Introducción al paralelismo - Hilos - Caso BlackListSearch
 ## Laboratorio 1
+## Integrantes 
+* Lina Maria Buitrago Espindola
+* Johan Stiven Bogota Velez 
   
 
 **Parte I - Introducción a Hilos en Java**
@@ -29,13 +32,32 @@ La estrategia de paralelismo antes implementada es ineficiente en ciertos casos,
 
 A partir de lo anterior, implemente la siguiente secuencia de experimentos para realizar las validación de direcciones IP dispersas (por ejemplo 202.24.34.55), tomando los tiempos de ejecución de los mismos (asegúrese de hacerlos en la misma máquina):
 
+Al iniciar el programa ejecute el monitor jVisualVM, y a medida que corran las pruebas, revise y anote el consumo de CPU y de memoria en cada caso. ![](img/jvisualvm.png)
+
 1. Un solo hilo.
+![image](https://user-images.githubusercontent.com/59893804/105909067-104c6380-5ff5-11eb-8235-b288d687e735.png)
+![image](https://user-images.githubusercontent.com/59893804/105909081-16424480-5ff5-11eb-89ae-748648319d84.png)
 2. Tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html)).
+
+_En este caso los nucleos de procesamiento logicos fueron 8_ 
+![image](https://user-images.githubusercontent.com/59893804/105909228-4ab60080-5ff5-11eb-83a7-0cf21ebad7dd.png)
+![image](https://user-images.githubusercontent.com/59893804/105909243-4ee21e00-5ff5-11eb-9072-f6b4bc76e4f0.png)
+![image](https://user-images.githubusercontent.com/59893804/105909253-51447800-5ff5-11eb-92e6-6375ce7f6e6c.png)
+
 3. Tantos hilos como el doble de núcleos de procesamiento.
+_Como anteriormente los nucleos de procesamiento fueron 8 en este caso serian 16_
+
+![image](https://user-images.githubusercontent.com/59893804/105909353-71743700-5ff5-11eb-8e4f-23850e9e9f7b.png)
+![image](https://user-images.githubusercontent.com/59893804/105909365-746f2780-5ff5-11eb-85f3-a759007bbdd8.png)
+
 4. 50 hilos.
+![image](https://user-images.githubusercontent.com/59893804/105909428-8bae1500-5ff5-11eb-9ceb-66253759f725.png)
+![image](https://user-images.githubusercontent.com/59893804/105909435-8e106f00-5ff5-11eb-928c-5819702996f5.png)
+
 5. 100 hilos.
 
-Al iniciar el programa ejecute el monitor jVisualVM, y a medida que corran las pruebas, revise y anote el consumo de CPU y de memoria en cada caso. ![](img/jvisualvm.png)
+![image](https://user-images.githubusercontent.com/59893804/105909477-9799d700-5ff5-11eb-8308-e8d650229d26.png)
+![image](https://user-images.githubusercontent.com/59893804/105909497-9d8fb800-5ff5-11eb-830e-724046a22019.png)
 
 Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tiempo de solución vs. número de hilos. Analice y plantee hipótesis con su compañero para las siguientes preguntas (puede tener en cuenta lo reportado por jVisualVM):
 
