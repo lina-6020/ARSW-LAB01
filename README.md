@@ -73,6 +73,10 @@ _Como anteriormente los nucleos de procesamiento fueron 8 en este caso serian 16
 
 Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tiempo de solución vs. número de hilos. Analice y plantee hipótesis con su compañero para las siguientes preguntas (puede tener en cuenta lo reportado por jVisualVM):
 
+![image](https://user-images.githubusercontent.com/59893804/105913223-84d5d100-5ffa-11eb-8fef-397f7a2dbef1.png)
+
+![image](https://user-images.githubusercontent.com/59893804/105913269-90c19300-5ffa-11eb-9d8d-a1832f131821.png)
+
 
 
 1. Según la [ley de Amdahls](https://www.pugetsystems.com/labs/articles/Estimating-CPU-Performance-using-Amdahls-Law-619/#WhatisAmdahlsLaw?):
