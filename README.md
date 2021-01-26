@@ -10,12 +10,26 @@
 
 **Parte I - Introducción a Hilos en Java**
 
-1. De acuerdo con lo revisado en las lecturas, complete las clases CountThread, para que las mismas definan el ciclo de vida de un hilo que imprima por pantalla los números entre A y B.
-2. Complete el método __main__ de la clase CountMainThreads para que:
-	1. Cree 3 hilos de tipo CountThread, asignándole al primero el intervalo [0..99], al segundo [99..199], y al tercero [200..299].
-	2. Inicie los tres hilos con 'start()'.
-	3. Ejecute y revise la salida por pantalla. 
+En esta primera parte completamos la clase _CountThread_ para que las mismas definan el ciclo de vida de un hilo que imprimira por pantalla los números entre A y B posteriormente:
+
+	1. Creamos  3 hilos de tipo CountThread, asignándole al primero el intervalo [0..99], al segundo [99..199], y al tercero [200..299].
+	
+	![image](https://user-images.githubusercontent.com/59893804/105916083-74275a00-5ffe-11eb-88dd-738c60e5e70f.png)
+	
+	2. Iniciamos los tres hilos con 'start()'.
+	
+	![image](https://user-images.githubusercontent.com/59893804/105916132-87d2c080-5ffe-11eb-8f99-1b7b0919aa37.png)
+	
+	3. Ejecutamos y revisamos la salida por pantalla. 
 	4. Cambie el incio con 'start()' por 'run()'. Cómo cambia la salida?, por qué?.
+	En primer lugar cabe aclarar que el start lanza el hilo ejecutando el método run mientras que el .run ejecuta solo el método de la clase. En la salida de .start 		logramos obtener todos los números solicitados en el hilo pero no lo obtenemos de forma secuencial y ordenada mientras que con .run si lo logramos. Con ambos métodos 		logramos el objetivo pero con .run logramos una salida más clara.
+	
+	* .run()
+	![image](https://user-images.githubusercontent.com/59893804/105917066-e51b4180-5fff-11eb-8f1d-d07d2ed82dbb.png)
+
+	* .start()
+	![image](https://user-images.githubusercontent.com/59893804/105917201-09771e00-6000-11eb-9b1b-9f7e21928b7c.png)
+
 
 **Parte II - Ejercicio Black List Search**
 
