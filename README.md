@@ -14,7 +14,7 @@ En esta primera parte completamos la clase _CountThread_ para que las mismas def
 
 1. Creamos 3 hilos de tipo CountThread, asignándole al primero el intervalo [0..99], al segundo [99..199], y al tercero [200..299].
 
-     ![image](https://user-images.githubusercontent.com/59893804/105916083-74275a00-5ffe-11eb-88dd-738c60e5e70f.png) 
+    ![image](https://user-images.githubusercontent.com/59893804/105916083-74275a00-5ffe-11eb-88dd-738c60e5e70f.png) 
 
 
 2. Iniciamos los tres hilos con 'start()'.
