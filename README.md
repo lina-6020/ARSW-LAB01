@@ -26,22 +26,15 @@ En esta primera parte completamos la clase _CountThread_ para que las mismas def
 4. Cambiamos el incio de 'start()' por 'run()'. 
 
 	La salida cambio así:
-	En primer lugar cabe aclarar que el start lanza el hilo ejecutando el método run mientras que el .run ejecuta solo el método de la clase. En la salida de .start 		logramos obtener todos los números solicitados en el hilo pero no lo obtenemos de forma secuencial y ordenada mientras que con .run si lo logramos. Con ambos métodos 		logramos el objetivo pero con .run logramos una salida más clara.
-	
-	
-	
-	
+	En primer lugar cabe aclarar que el start lanza el hilo ejecutando el método run mientras que el .run ejecuta solo el método de la clase. En la salida de .start 		logramos obtener todos los números solicitados en el hilo pero no lo obtenemos de forma secuencial y ordenada mientras que con .run si lo logramos. Con ambos métodos 		logramos el objetivo pero con .run logramos una salida más clara.	
 	
     - .run() 
 
-![image](https://user-images.githubusercontent.com/59893804/105917066-e51b4180-5fff-11eb-8f1d-d07d2ed82dbb.png)
-
-
-
+    ![image](https://user-images.githubusercontent.com/59893804/105917066-e51b4180-5fff-11eb-8f1d-d07d2ed82dbb.png)
 
     - .start()
-
-![image](https://user-images.githubusercontent.com/59893804/105917201-09771e00-6000-11eb-9b1b-9f7e21928b7c.png)
+    
+    ![image](https://user-images.githubusercontent.com/59893804/105917201-09771e00-6000-11eb-9b1b-9f7e21928b7c.png)
 
 
 **Parte II - Ejercicio Black List Search**
