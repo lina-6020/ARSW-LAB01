@@ -41,7 +41,7 @@ En esta primera parte completamos la clase _CountThread_ para que las mismas def
 
 En esta parte creamos una clase de tipo Thread _ServodorThread_ que representa el ciclo de vida de un hilo que hace la busqueda de un segmento del conjunto de servidores disponibles. Este método retorna las ocurrencias encontradas y si es confiable o no apartir de la ip y el número de hilos como nuevo parametro. 
 
-    ![image](https://user-images.githubusercontent.com/59893804/105923736-c53d4b00-600a-11eb-8165-0f70d9b7c069.png)
+![image](https://user-images.githubusercontent.com/59893804/105923736-c53d4b00-600a-11eb-8165-0f70d9b7c069.png)
 
 
 **Parte II.I Para discutir la próxima clase (NO para implementar aún)**
@@ -54,13 +54,13 @@ A partir de lo anterior, implemente la siguiente secuencia de experimentos para 
 
 Al iniciar el programa ejecute el monitor jVisualVM, y a medida que corran las pruebas, revise y anote el consumo de CPU y de memoria en cada caso.
 
-1. Un solo hilo.
+1. Resultado de la ejecución con un solo hilo.
 
 ![image](https://user-images.githubusercontent.com/59893804/105909067-104c6380-5ff5-11eb-8235-b288d687e735.png)
 
 ![image](https://user-images.githubusercontent.com/59893804/105909081-16424480-5ff5-11eb-89ae-748648319d84.png)
 
-2. Tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html)).
+2. Resultado de la ejecución con tantos hilos como núcleos de procesamiento (haga que el programa determine esto haciendo uso del [API Runtime](https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html)).
 
 _En este caso los nucleos de procesamiento logicos fueron 8_ 
 
@@ -71,7 +71,7 @@ _En este caso los nucleos de procesamiento logicos fueron 8_
 ![image](https://user-images.githubusercontent.com/59893804/105909253-51447800-5ff5-11eb-92e6-6375ce7f6e6c.png)
 
 
-3. Tantos hilos como el doble de núcleos de procesamiento.
+3. Resultado de la ejecución con tantos hilos como el doble de núcleos de procesamiento.
 
 _Como anteriormente los nucleos de procesamiento fueron 8 en este caso serian 16_
 
@@ -79,13 +79,13 @@ _Como anteriormente los nucleos de procesamiento fueron 8 en este caso serian 16
 
 ![image](https://user-images.githubusercontent.com/59893804/105909365-746f2780-5ff5-11eb-85f3-a759007bbdd8.png)
 
-4. 50 hilos.
+4. Resultado de la ejecución con 50 hilos.
 
 ![image](https://user-images.githubusercontent.com/59893804/105909428-8bae1500-5ff5-11eb-9ceb-66253759f725.png)
 
 ![image](https://user-images.githubusercontent.com/59893804/105909435-8e106f00-5ff5-11eb-928c-5819702996f5.png)
 
-5. 100 hilos.
+5. Resultado de la ejecución con 100 hilos.
 
 ![image](https://user-images.githubusercontent.com/59893804/105909477-9799d700-5ff5-11eb-8308-e8d650229d26.png)
 
