@@ -47,6 +47,7 @@ En esta parte creamos una clase de tipo Thread _ServodorThread_ que representa e
 **Parte II.I Para discutir la próxima clase (NO para implementar aún)**
 
 La estrategia de paralelismo antes implementada es ineficiente en ciertos casos, pues la búsqueda se sigue realizando aún cuando los N hilos (en su conjunto) ya hayan encontrado el número mínimo de ocurrencias requeridas para reportar al servidor como malicioso. Cómo se podría modificar la implementación para minimizar el número de consultas en estos casos?, qué elemento nuevo traería esto al problema?
+Traería los nucleos de procesamiento asi sabria cuantos hilos se necesitarian realmente para completar la tarea-
 
 **Parte III - Evaluación de Desempeño**
 
@@ -93,6 +94,8 @@ _Como anteriormente los nucleos de procesamiento fueron 8 en este caso serian 16
 
 Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tiempo de solución vs. número de hilos. Analice y plantee hipótesis con su compañero para las siguientes preguntas (puede tener en cuenta lo reportado por jVisualVM):
 
+Podemos ver que a mayor cantidad de hilos el tiempo se reduce muy significativamente. 
+
 ![image](https://user-images.githubusercontent.com/59893804/105913456-db430f80-5ffa-11eb-87a3-fe9db6ee3627.png)
 
 ![image](https://user-images.githubusercontent.com/59893804/105913269-90c19300-5ffa-11eb-9d8d-a1832f131821.png)
@@ -101,11 +104,17 @@ Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tie
 
 1. Según la [ley de Amdahls](https://www.pugetsystems.com/labs/articles/Estimating-CPU-Performance-using-Amdahls-Law-619/#WhatisAmdahlsLaw?):
 
-	![](img/ahmdahls.png), donde _S(n)_ es el mejoramiento teórico del desempeño, _P_ la fracción paralelizable del algoritmo, y _n_ el número de hilos, a mayor _n_, mayor debería ser dicha mejora. Por qué el mejor desempeño no se logra con los 500 hilos?, cómo se compara este desempeño cuando se usan 200?. 
+![](img/ahmdahls.png), donde _S(n)_ es el mejoramiento teórico del desempeño, _P_ la fracción paralelizable del algoritmo, y _n_ el número de hilos, a mayor _n_, mayor debería ser dicha mejora. Por qué el mejor desempeño no se logra con los 500 hilos?, cómo se compara este desempeño cuando se usan 200?. 
+
+Esta formula de paralelización nos dice que el programa sera mas eficiente al usar mayor cantidad de núcleos en cuanto el programa sea serial y aunque tenemos 500 hilos la cantidad de núcleos no nos ayuda a una mejor efectividad. Con 200 hilos funciona mejor ya que no se tiene que hacer el mismo esfuerzo que con 500.
 
 2. Cómo se comporta la solución usando tantos hilos de procesamiento como núcleos comparado con el resultado de usar el doble de éste?.
 
+En este caso se reduce el tiempo a la mitad porque en vez de trabajar ineficientemente uno a uno podemos trabajas dos a uno mas efectivamente.
+
 3. De acuerdo con lo anterior, si para este problema en lugar de 100 hilos en una sola CPU se pudiera usar 1 hilo en cada una de 100 máquinas hipotéticas, la ley de Amdahls se aplicaría mejor?. Si en lugar de esto se usaran c hilos en 100/c máquinas distribuidas (siendo c es el número de núcleos de dichas máquinas), se mejoraría?. Explique su respuesta.
+    * No se aplicaria mejor ya que el número de nucleos no es mayor.
+    * Hasta cierto punto mejoraría que c en 100/c , mejoraría siempre y cuando c fuera mayor a 100 , se compartaria exponencialmente y el tiempo reduciaria significativamente. 
 
 
 
