@@ -5,7 +5,7 @@
 ## Laboratorio 1
 ## Integrantes 
 * Lina Maria Buitrago Espindola
-* Johan Stiven Bogota Velez 
+* Johann Steven Bogotá Vélez 
   
 
 **Parte I - Introducción a Hilos en Java**
